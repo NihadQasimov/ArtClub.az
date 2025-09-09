@@ -1,0 +1,488 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    flex-wrap: wrap;
+    background-color: #ede8d0;
+}
+.ms-madi-regular {
+    font-family: "Ms Madi", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+body > i{
+    color: white;
+}
+#FCB61A:root {
+    background-color: #0a3d33;
+    background-color: #f4f3f0;
+}
+
+nav {
+    width: 18%;
+    height: 100%;
+    background-color: #f4f3f0;
+    overflow-y: scroll;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    transition: 1s;
+    flex-direction: column;
+    position: fixed;
+    left: -100%;
+}
+
+::-webkit-scrollbar-track {
+    background-color: red;
+}
+
+
+nav h1 {
+    color: #4f3d0e;
+    font-style: normal;
+    padding-top: 20px;
+    text-align: center;
+    font-family: "Dancing Script", serif;
+
+    font-size: 50px;
+
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #ede8d0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #ede8d0;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #bfaa74;
+}
+
+.unvan {
+    width: 90%;
+    padding: 30px 0px;
+    color: #4f3d0e;
+    text-align: center;
+    border: none;
+    font-family: "Dancing Script", serif;
+    font-size: 26px;
+    border-top: 2px solid #4f3d0e;
+    border-bottom: 2px solid #4f3d0e;
+    margin: 30px auto;
+}
+
+nav ul li  {
+    list-style-type: none;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 28px;
+    font-family: "Dancing Script", serif;
+
+    position: relative;
+    
+}
+nav ul li:nth-child(1)::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    bottom: -10px;
+    left: 0;
+    border: none;
+    background-color: #4f3d0e;
+    border-radius: 0.2cm;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #4f3d0e;
+    font-family: "Dancing Script", serif;
+
+}
+nav ul li::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0%;
+    bottom: -10px;
+    border: none;
+    transition: 0.6s;
+    background-color: #4f3d0e;
+    left: 50%;
+    border-radius: 0.2cm;
+}
+nav ul li:hover::after{
+    width: 100%;
+    left: 0px;
+}
+nav i {
+    font-size: 20px;
+    margin-top: 30px;
+    color: #4f3d0e;
+}
+nav i a{
+    text-decoration: none;
+    color: #4f3d0e;
+}
+
+nav i p {
+    display: inline-block;
+    margin-left: 3px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+nav>p {
+    color: #4f3d0e;
+    font-family: "Dancing Script", serif;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+}
+header{
+    width: 100% ;
+    height: 100vh;
+    transition: 1s;
+    margin-left: auto;
+}
+header {
+    background-color: #ede8d0 !important;
+
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+  }
+
+  .swiper {
+    width: 100%;
+    background-color: #ede8d0 !important;
+
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    
+   background-color: #EDE8D0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: nihad;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+  }
+
+  .swiper-slide img,video {
+    display: block;
+    width: 90%;
+    margin: auto;
+    height: 90%;
+    object-fit: cover;
+  }
+  .map{
+    width: 100%;
+    margin-top: 5rem;
+    margin-left: auto;
+    padding: 50px 0px;
+    min-height: 500px;
+    transition: 1s;
+  }
+  .basliq{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 70px;
+    font-size: 70px;
+    color: #4f3d0e;
+    font-weight: 100;
+    font-family: "Dancing Script", serif;
+
+  }
+  .orta{
+    width: 100%;
+    display: flex;
+  }
+  .sol{
+    width: 50%;
+
+  }
+  .sag{
+    width: 50%;
+  }
+
+  .bir{
+    text-align: center;
+    font-size: 20px;
+    color: #4f3d0e;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .iki{
+    font-size: 18px;
+    color: #4f3d0e;
+    margin-top: 30px;
+  }
+  .sag span{
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    margin-top: 30px;
+    color: #4f3d0e;
+}
+
+.artma{
+    width: 100%;
+    transition: 1s;
+    margin-left: auto;
+    padding: 100px 50px;
+    background-color:  #f4f3f0;
+}
+.artmabox{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.artma h4{
+    color: #E6D79F;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 30px;
+}
+
+.artma .box {   
+    width: 33%;
+    height: 600px;
+    border-radius: 0.2cm;
+    background: red;
+    margin-top: 20px;
+    position: relative;
+    transition: 1s;
+    overflow: hidden;
+}
+.box img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.2cm;
+    transition: 1s;
+    object-fit: cover;
+}
+.box h1{
+    color: white;
+    position: absolute;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    bottom: 3%;
+    left: 10%;
+    transition: 1s;
+}
+.box p{
+    text-align: justify;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    transition: 1s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    bottom: -10%;
+    left: 10%;
+
+}
+.box:hover{
+    width: 50%;
+
+}
+.box:hover img{
+    transform: scale(1);
+}
+.box:hover h1{
+    width: 40%;
+    bottom: 20%;
+    left: 10%;
+}
+.box:hover p{
+    width: 40%;
+    bottom: 3%;
+    left: 10%;
+}
+.artmabox:nth-child(3):hover img{
+    width: 90%;
+    height: 90%;
+}
+.reytinq{
+    width: 100%;
+    margin-left: auto;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    background-color: rgb(194, 194, 194);
+}
+.qara{
+    width: 80%;
+    height: 300px;
+    background-image: linear-gradient(rgba(0, 0, 15, 0.193),rgba(0, 0, 15, 0.582),rgba(0, 0, 9, 0.73)),url("pexels-vojtech-okenka-127162-1055272.jpg");
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+.ok{
+border-radius: 100%;
+height: 60%;
+text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 20%;
+border: 3px dashed #E6D79F;
+transition: 0.3s;
+}
+.ok:hover{
+    border: 3px solid #E6D79F;
+}
+.ok i{
+    color: #EDE8D0;
+}
+.ok p{
+    color: white;
+    margin: 10px 0px;
+}
+.ok span{
+    color: #EDE8D0;
+}
+
+.fa-bars-staggered{
+font-size: 30px;
+color: goldenrod;
+position: fixed;
+top: 1%;
+left: 1%;
+z-index: 10000;
+
+}
+
+.boyut{
+    left: 0%;
+    transition: 1s;
+}
+.kicilt{
+    width: 82%;
+}
+.fa-x{
+    font-size: 25px;
+color: #4f3d0e;
+left: 15%;
+z-index: 10000;
+display: none ;
+}
+footer{
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    color: #4f3d0e;
+    margin-left: auto;
+    transition: 1s;
+
+}
+footer p{
+    margin: auto;
+}
+nav:hover{
+    box-shadow: 5px 5px 30px black;
+}
+@media (max-width:768px) {
+    nav{
+z-index: 1000000000000000;
+width: 45%;
+    }
+    header{
+        height: 45vh;
+    }
+    .artma{
+        min-height: 45vh;
+        width: 100%;
+    }
+    .artmabox{
+        flex-wrap: wrap;
+
+    }
+    .box{
+        width: 100% !important;
+    }
+    .box:hover h1{
+        width: 100%;
+        bottom: 30%;
+    }
+    .box p{
+        bottom: -12%;
+    }
+    .qara{
+        flex-wrap: wrap;
+        min-height: 500px;
+
+    }
+    .ok{
+        width: 60%;
+        height: 30% !important; 
+    }
+    .reytinq{
+        height: auto;
+        padding: 100px 0px;
+    }
+    .orta{
+        flex-wrap: wrap;
+    }
+    .sol{
+        width: 90%;
+        margin: 30px auto!important;
+
+
+    }
+    .sag{
+        width: 100%;
+        margin: 30px auto;
+    }
+    .iki{
+        padding: 18px;
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .bir{
+        font-size: 23px;
+    }
+    
+}
+
+
+@keyframes nihad {
+    from{
+        margin-top: 300px;
+        overflow: hidden;
+    }
+    to{
+        margin-top: 0px;
+        overflow: hidden;
+
+    }
+}
+
+::selection 
+{
+   background-color: #ede8d0;
+   color : #fff
+}
